@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(){
+    char a;
+    char b;  
+    char c;
+    char d;
+    char e;
+    scanf("%c %c %c %c %c",&a,&b,&c,&d,&e);
+    if(a>='A'&&a<='Z')
+        a+=32;  
+        else if(a>='a'&&a<='z')
+        a-=32; 
+    if(b>='A'&&b<='Z')
+        b+=32;
+        else if(b>='a'&&b<='z')
+        b-=32; 
+    if(c>='A'&&c<='Z')
+        c+=32;
+        else if(c>='a'&&c<='z')
+        c-=32;
+    if(d>='A'&&d<='Z')
+        d+=32;
+        else if(d>='a'&&d<='z')
+        d-=32;
+    if(e>='A'&&e<='Z')
+        e+=32;
+        else if(e>='a'&&e<='z')
+        e-=32;
+    printf("%c %c %c %c %c\n",a,b,c,d,e);
+}
